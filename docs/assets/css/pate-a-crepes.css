@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    color:white;
+    font-family : 'Trebuchet MS', sans-serif;
+}
+
+.BoxCentre {
+    background-color: #171614;
+    text-align: justify;
+    margin-left:5%;
+}
+
+.Orange {
+    color:lightcoral;
+}
+
+.box {
+    background-color: #171614;
+}
