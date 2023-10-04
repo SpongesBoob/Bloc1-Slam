@@ -1,3 +1,7 @@
+body {
+    background-color: paleturquoise;
+    font-family : 'Trebuchet MS', sans-serif;
+}
 h1 {
 	color: blue;
 }

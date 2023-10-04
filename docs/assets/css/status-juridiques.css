@@ -1,0 +1,24 @@
+body {
+    background-color: paleturquoise;
+    color: black;
+    font-family : 'Trebuchet MS', sans-serif;
+}
+
+td {
+    border: 2px solid grey;
+    width: 180px;
+    height:80px;
+    padding:12px;
+}
+
+table {
+    border-collapse:collapse;
+}
+
+.rowheaders {
+    background-color: paleturquoise;
+}
+
+.colheaders {
+    background-color: paleturquoise;
+}

@@ -1,11 +1,11 @@
 body {
-    background-color: turquoise;
-    color:white;
+    background-color: paleturquoise;
+    color:black;
     font-family : 'Trebuchet MS', sans-serif;
 }
 
 .BoxCentre {
-    background-color: turquoise;
+    background-color: paleturquoise;
     text-align: justify;
     margin-left:5%;
 }
