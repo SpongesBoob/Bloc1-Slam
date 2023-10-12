@@ -1,0 +1,29 @@
+body {
+    background-image: url(./../../images/df-min.jpg);
+    font-family : 'Trebuchet MS', sans-serif;
+}
+.bigbox{
+    background-color: coral;
+    color: white;
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 20px;
+}
+
+.Smallbox{
+    text-align: justify;
+    display: flex;
+    padding-top: 80px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.Smallbox > div{
+
+    padding: 20px;
+    margin: 20px;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;   
+}  
