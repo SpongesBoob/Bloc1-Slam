@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+li span {
+  flex: 1;
+}
+
+li button {
+  margin-left: 10px;
+  background-color: #f44336;
+}
+
+li button:hover {
+  background-color: #d32f2f;
+}
+
+.save-container,
+.load-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.save-container input[type="text"],
+.load-container select {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.save-container button,
+.load-container button {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.save-container button:hover,
+.load-container button:hover {
+  background-color: #45a049;
+}
