@@ -18,11 +18,70 @@ function updateText() {
     resultat.style.fontSize = taille + "px";
     resultat.style.textTransform = style;
 }
+function updateText() {
+  var texte = document.getElementById("texte").value;
+  var gras = document.getElementById("gras").checked;
+  var italique = document.getElementById("italique").checked;
+  var souligne = document.getElementById("souligne").checked;
+  var barre = document.getElementById("barre").checked;
+  var couleur = document.getElementById("couleur").value;
+  var taille = document.getElementById("taille").value;
+
+  var resultat = document.getElementById("resultat");
+  resultat.innerHTML = texte;
+
+  if (gras) {
+    resultat.style.fontWeight = "bold";
+  } else {
+    resultat.style.fontWeight = "normal";
+  }
+
+  if (italique) {
+    resultat.style.fontStyle = "italic";
+  } else {
+    resultat.style.fontStyle = "normal";
+  }
+
+  if (souligne) {
+    resultat.style.textDecoration = "underline";
+  } else {
+    resultat.style.textDecoration = "none";
+  }
+
+  if (barre) {
+    resultat.style.textDecoration = "line-through";
+  }
+
+  resultat.style.color = couleur;
+  resultat.style.fontSize = taille + "px";
+}
+function attachEventListeners() {
+  document.getElementById("clearButton").addEventListener("click", clearResult);
+  document.getElementById("divideButton").addEventListener("click", function() { calculate('/') });
+  document.getElementById("sevenButton").addEventListener("click", function() { appendToResult(7) });
+  document.getElementById("eightButton").addEventListener("click", function() { appendToResult(8) });
+  document.getElementById("nineButton").addEventListener("click", function() { appendToResult(9) });
+  document.getElementById("multiplyButton").addEventListener("click", function() { calculate('*') });
+  document.getElementById("fourButton").addEventListener("click", function() { appendToResult(4) });
+  document.getElementById("fiveButton").addEventListener("click", function() { appendToResult(5) });
+  document.getElementById("sixButton").addEventListener("click", function() { appendToResult(6) });
+  document.getElementById("subtractButton").addEventListener("click", function() { calculate('-') });
+  document.getElementById("oneButton").addEventListener("click", function() { appendToResult(1) });
+  document.getElementById("twoButton").addEventListener("click", function() { appendToResult(2) });
+  document.getElementById("threeButton").addEventListener("click", function() { appendToResult(3) });
+  document.getElementById("addButton").addEventListener("click", function() { calculate('+') });
+  document.getElementById("zeroButton").addEventListener("click", function() { appendToResult(0) });
+  document.getElementById("decimalButton").addEventListener("click", function() { calculate('.') });
+  document.getElementById("equalButton").addEventListener("click", function() { calculate('=') });
+}
+attachEventListeners();
 
 let resultField = document.getElementById('result');
 let currentOperation = '';
 let currentNumber = '';
 let result = 0;
+
+
 
 function appendToResult(number) {
   currentNumber += number;
