@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visualisation des changements de texte</title>
+    <link rel="stylesheet" href="./../../assets/css/td4/style.css">
+</head>
+<body>
+    <div>
+        <label for="texte">Texte :</label>
+        <input type="text" id="texte" oninput="updateText()" value="Hello, world!">
+    </div>
+    <div>
+        <label for="gras">Gras :</label>
+        <input type="checkbox" id="gras" onchange="updateText()">
+    </div>
+    <div>
+        <label for="italique">Italique :</label>
+        <input type="checkbox" id="italique" onchange="updateText()">
+    </div>
+    <div>
+        <label for="souligne">Souligné :</label>
+        <input type="checkbox" id="souligne" onchange="updateText()">
+    </div>
+    <div>
+        <label for="barre">Barré :</label>
+        <input type="checkbox" id="barre" onchange="updateText()">
+    </div>
+    <div>
+        <label for="couleur">Couleur :</label>
+        <input type="color" id="couleur" onchange="updateText()">
+    </div>
+    <div>
+        <label for="taille">Taille :</label>
+        <input type="number" id="taille" min="1" max="100" onchange="updateText()" value="16">
+    </div>
+        <label for="taille">Taille :</label>
+        <input type="number" id="taille" min="1" max="100" onchange="updateText()" value="16">
+    </div>
+    <div>
+        <label for="style">Style d'écriture :</label>
+        <select id="style" onchange="updateText()">
+            <option value="normal">Normal</option>
+            <option value="uppercase">Majuscules</option>
+            <option value="lowercase">Minuscules</option>
+            <option value="capitalize">Capitalize</option>
+        </select>
+    </div>
+    <div>
+        <p id="resultat"></p>
+    </div>
+
+    <script src="./../../assets/js/td4/style.js"></script>
+</body>
+</html>

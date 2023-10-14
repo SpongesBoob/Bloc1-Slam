@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo List</title>
+  <link rel="stylesheet" type="text/css" href="./../../assets/css/td4/toodoolist.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Todo List</h1>
+    <div class="input-container">
+      <input type="text" id="taskInput" placeholder="Ajouter une tâche">
+      <button onclick="addTask()">Ajouter</button>
+    </div>
+    <ul id="taskList"></ul>
+    <div class="save-container">
+      <input type="text" id="saveName" placeholder="Nom de la sauvegarde">
+      <button onclick="saveTasks()">Sauvegarder</button>
+    </div>
+    <div class="load-container">
+      <select id="loadSelect">
+        <option value="">Choisir une sauvegarde</option>
+      </select>
+      <button onclick="loadTasks()">Charger</button>
+    </div>
+  </div>
+
+  <script src="./../../assets/js/td4/style.js"></script>
+</body>
+</html>

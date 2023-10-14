@@ -1,0 +1,41 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#texte {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.calculatrice {
+  width: 300px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  width: 300px;
+  height: 50px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d2d2d2;
+}
+
+.completed {
+  text-decoration: line-through;
+}
